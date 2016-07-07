@@ -1,0 +1,116 @@
+@import 'https://fonts.googleapis.com/css?family=VT323';
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@-webkit-keyframes tada {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  10%, 20% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+            transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+  30%, 50%, 70%, 90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+            transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+  40%, 60%, 80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+            transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes tada {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  10%, 20% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+            transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+  30%, 50%, 70%, 90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+            transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+  40%, 60%, 80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+            transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+
+header {
+  background: #575757;
+  padding: 1.5rem 1rem;
+  color: white;
+  font-size: 1.2rem;
+  font-family: "VT323", monospace;
+}
+
+header #separator {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 1px solid red;
+}
+
+header h4 {
+  position: relative;
+  top: -1;
+  border-top: 1px solid #575757;
+  color: #c4c4c4;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+img {
+  height: 2em;
+  width: 2em;
+  margin-top: -2.5em;
+  float: right;
+}
+
+img:hover {
+  -webkit-animation: .5s tada;
+          animation: .5s tada;
+}
+
+nav ul {
+  list-style: none;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background: #4a4a4a;
+  font-family: "VT323", monospace;
+  font-size: 1.2rem;
+}
+
+nav ul li {
+  border-right: 1px solid #8a8a8a;
+}
+
+nav ul a {
+  display: inline-block;
+  padding: 1.5rem 1rem;
+  transition: .3s background ease-in-out;
+  text-decoration: none;
+  color: white;
+}
+
+nav ul a:hover {
+  background: #525252;
+}
+
+/*# sourceMappingURL=style.css.map */

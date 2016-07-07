@@ -1,0 +1,20 @@
+nav ul
+  list-style: none
+  display: flex
+  background: $nav
+  font:
+    family: $font
+    size: $size
+
+  li
+    border-right: 1px solid lighten($nav, 25)
+
+  a
+    display: inline-block
+    padding: $padding
+    transition: .3s background ease-in-out
+    text-decoration: none
+    +contrast($nav)
+
+    &:hover
+      background: lighten($nav, 3)

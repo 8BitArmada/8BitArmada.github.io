@@ -1,0 +1,45 @@
+@keyframes tada
+  from
+    transform: scale3d(1, 1, 1)
+
+  10%, 20%
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg)
+
+  30%, 50%, 70%, 90%
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)
+
+  40%, 60%, 80%
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)
+
+  to
+    transform: scale3d(1, 1, 1)
+
+header
+  background: $header
+  padding: $padding
+  +contrast($header)
+  font:
+    size: $size
+    family: $font
+
+  #separator
+    display: flex
+    border-top: 1px solid $separator
+
+  h4
+    position: relative
+    top: -1
+    border-top: 1px solid $header
+    color: lighten($header, 43)
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+
+img
+  height: 2em
+  width: 2em
+  margin-top: -2.5em
+  float: right
+
+  &:hover
+    animation: .5s tada
