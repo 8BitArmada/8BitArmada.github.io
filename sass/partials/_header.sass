@@ -22,24 +22,25 @@ header
     size: $size
     family: $font
 
-  #separator
-    display: flex
-    border-top: 1px solid $separator
-
   h4
     position: relative
-    top: -1
-    border-top: 1px solid $header
     color: lighten($header, 43)
     white-space: nowrap
     overflow: hidden
     text-overflow: ellipsis
+    &::after
+      content: ""
+      position: relative
+      bottom: $size/2
+      width: 100%
+      border-bottom: 1px solid blue
+      display: inline-block
 
-img
-  height: 2em
-  width: 2em
-  margin-top: -2.5em
-  float: right
+  img
+    height: 2em
+    width: 2em
+    margin-top: -2.5em
+    float: right
 
-  &:hover
-    animation: .5s tada
+    &:hover
+      animation: .5s tada

@@ -1,9 +1,7 @@
-html
-  head
-    include mixins.jade
-    link(rel='stylesheet', href='css/style.css')
-  body
-    include sections/header.jade
-    include sections/navigation.jade
-    //- include sections/recent.jade
-    
+extends includes/layout.jade
+
+block content
+  include sections/header.jade
+  include sections/navigation.jade
+  //- include sections/recent.jade
+  +video('')

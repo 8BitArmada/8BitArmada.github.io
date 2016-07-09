@@ -58,31 +58,31 @@ header {
   font-family: "VT323", monospace;
 }
 
-header #separator {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  border-top: 1px solid red;
-}
-
 header h4 {
   position: relative;
-  top: -1;
-  border-top: 1px solid #575757;
   color: #c4c4c4;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-img {
+header h4::after {
+  content: "";
+  position: relative;
+  bottom: 0.6rem;
+  width: 100%;
+  border-bottom: 1px solid blue;
+  display: inline-block;
+}
+
+header img {
   height: 2em;
   width: 2em;
   margin-top: -2.5em;
   float: right;
 }
 
-img:hover {
+header img:hover {
   -webkit-animation: .5s tada;
           animation: .5s tada;
 }
