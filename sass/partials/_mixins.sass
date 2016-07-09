@@ -7,4 +7,10 @@
 
   @else
     color: black
-  
+
+
+@mixin truncate($width: null)
+  width: $width
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis

@@ -1,8 +1,10 @@
 doctype html
+// Entypo pictograms by Daniel Bruce — www.entypo.com
 html
   head
     link(rel="stylesheet", type="text/css", href="css/style.css")
     include mixins.jade
   body
-    // Entypo pictograms by Daniel Bruce — www.entypo.com
     block content
+      include ../sections/header.jade
+      include ../sections/navigation.jade

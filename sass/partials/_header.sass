@@ -18,6 +18,8 @@ header
   background: $header
   padding: $padding
   +contrast($header)
+  white-space: nowrap
+  +truncate(100%)
   font:
     size: $size
     family: $font
@@ -25,22 +27,22 @@ header
   h4
     position: relative
     color: lighten($header, 43)
-    white-space: nowrap
-    overflow: hidden
-    text-overflow: ellipsis
+    +truncate()
+    margin-right: 2em
+
     &::after
-      content: ""
+      content: ''
       position: relative
-      bottom: $size/2
+      bottom: .5em
       width: 100%
-      border-bottom: 1px solid blue
+      border-bottom: 1px solid $accent
       display: inline-block
 
   img
-    height: 2em
-    width: 2em
-    margin-top: -2.5em
+    height: 1.5em
+    width: 1.5em
+    display: inline-block
     float: right
-
+    margin-right: 2.5em
     &:hover
       animation: .5s tada

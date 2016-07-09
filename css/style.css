@@ -54,6 +54,11 @@ header {
   background: #575757;
   padding: 1.5rem 1rem;
   color: white;
+  white-space: nowrap;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-size: 1.2rem;
   font-family: "VT323", monospace;
 }
@@ -64,22 +69,24 @@ header h4 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  margin-right: 2em;
 }
 
 header h4::after {
-  content: "";
+  content: '';
   position: relative;
-  bottom: 0.6rem;
+  bottom: .5em;
   width: 100%;
-  border-bottom: 1px solid blue;
+  border-bottom: 1px solid lime;
   display: inline-block;
 }
 
 header img {
-  height: 2em;
-  width: 2em;
-  margin-top: -2.5em;
+  height: 1.5em;
+  width: 1.5em;
+  display: inline-block;
   float: right;
+  margin-right: 2.5em;
 }
 
 header img:hover {
@@ -98,7 +105,7 @@ nav ul {
 }
 
 nav ul li {
-  border-right: 1px solid #8a8a8a;
+  border-right: 1px solid lime;
 }
 
 nav ul a {
