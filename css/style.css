@@ -68,6 +68,7 @@ header h4 {
 
 header h4::after {
   content: "";
+  margin-left: 0.8rem;
   position: relative;
   bottom: 0.6rem;
   width: 100%;

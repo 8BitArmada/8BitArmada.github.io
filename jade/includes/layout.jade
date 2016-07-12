@@ -3,12 +3,11 @@ doctype html
 html
   head
     link(rel="stylesheet", type="text/css", href="css/style.css")
-    link(rel="stylesheet", type="text/css", href="css/mobile.css", media="screen and (max-width:480px)"
-)
+    link(rel="stylesheet", type="text/css", href="css/mobile.css", media="screen and (max-width:1920px)")
     include mixins.jade
   body
+    include ../sections/header.jade
+    include ../sections/navigation.jade
     block content
-      include ../sections/header.jade
-      include ../sections/navigation.jade
-      script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js")
-      script(src='js/mobile.js')
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js") //-J
+    script(src='js/mobile.js')

@@ -7,12 +7,12 @@ nav ul {
   overflow: hidden;
 }
 
-nav ul.visible {
-  height: 203px;
-}
-
 nav ul a {
   width: 100%;
+}
+
+nav ul.visible {
+  height: 202px;
 }
 
 img#toggle {
@@ -20,7 +20,7 @@ img#toggle {
   background: #4a4a4a;
   padding: 10px 50%;
   transition: .3s background ease-in-out;
-  width: 1.5em;
+  width: 1.2rem;
   margin: 0 auto;
   cursor: pointer;
 }
