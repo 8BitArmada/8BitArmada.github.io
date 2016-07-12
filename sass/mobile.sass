@@ -1,0 +1,24 @@
+@import partials/variables
+nav ul
+  flex-direction: column
+  height: 0px
+  transition: .3s height ease-in-out
+  overflow: hidden
+
+  &.visible
+    height: 203px
+
+  a
+    width: 100%
+
+img#toggle
+  display: block
+  background: $nav
+  padding: 0 50%
+  transition: .3s background ease-in-out
+  width: 32px
+  margin: 0 auto
+
+
+  &:hover
+    background: lighten($nav, 3)
