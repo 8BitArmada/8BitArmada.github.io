@@ -49,6 +49,7 @@
             transform: scale3d(1, 1, 1);
   }
 }
+
 header {
   background: #575757;
   padding: 1.5rem 1rem;
@@ -56,6 +57,7 @@ header {
   font-size: 1.2rem;
   font-family: "VT323", monospace;
 }
+
 header h4 {
   position: relative;
   color: #c4c4c4;
@@ -63,6 +65,7 @@ header h4 {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 header h4::after {
   content: "";
   position: relative;
@@ -71,15 +74,21 @@ header h4::after {
   border-bottom: 1px solid lime;
   display: inline-block;
 }
+
 header img {
   height: 2em;
   width: 2em;
   margin-top: -2.5em;
   float: right;
 }
+
 header img:hover {
-  -webkit-animation: 0.5s tada;
-          animation: 0.5s tada;
+  -webkit-animation: .5s tada;
+          animation: .5s tada;
+}
+
+#toggle {
+  display: none;
 }
 
 nav ul {
@@ -91,16 +100,19 @@ nav ul {
   font-family: "VT323", monospace;
   font-size: 1.2rem;
 }
+
 nav ul li {
   border-right: 1px solid #8a8a8a;
 }
+
 nav ul a {
   display: inline-block;
   padding: 1.5rem 1rem;
-  transition: 0.3s background ease-in-out;
+  transition: .3s background ease-in-out;
   text-decoration: none;
   color: white;
 }
+
 nav ul a:hover {
   background: #525252;
 }
