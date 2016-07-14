@@ -1,20 +1,21 @@
 @import partials/variables
 nav ul
   flex-direction: column
-  height: 0px
   transition: .3s height ease-in-out
   overflow: hidden
+  height: 0px
+
+  &.visible
+    height: $mobile-nav-height
 
   a
     width: 100%
 
-  &.visible
-    height: 202px
 
 img#toggle
   display: block
   background: $nav
-  padding: 10px 50%
+  padding: $size*.8 50%
   transition: .3s background ease-in-out
   width: $size
   margin: 0 auto

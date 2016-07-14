@@ -93,6 +93,10 @@ header img:hover {
           animation: .5s tada;
 }
 
+#toggle {
+  display: none;
+}
+
 nav ul {
   list-style: none;
   display: -webkit-flex;
