@@ -1,3 +1,5 @@
+// Animate.css
+
 @keyframes tada
   from
     transform: scale3d(1, 1, 1)
@@ -17,7 +19,7 @@
 header
   background: $header
   padding: $padding
-  +contrast($header)
+  color: contrast($header)
   font:
     size: $size
     family: $font
@@ -29,7 +31,7 @@ header
     overflow: hidden
     text-overflow: ellipsis
     &::after
-      content: ""
+      content: ''
       margin-left: $size/1.5
       position: relative
       bottom: $size/2
