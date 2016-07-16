@@ -82,7 +82,7 @@ header img:hover {
           animation: .5s tada;
 }
 
-#toggle {
+svg {
   display: none;
 }
 
