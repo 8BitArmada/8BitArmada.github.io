@@ -132,6 +132,8 @@ svg {
   fill: #4a4a4a;
   width: 1.2rem;
   height: 1.2rem;
+  overflow: visible;
+  margin-left: 0.6rem;
 }
 
 * {
