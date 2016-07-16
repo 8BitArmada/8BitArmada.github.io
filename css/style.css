@@ -1,14 +1,4 @@
 @import 'https://fonts.googleapis.com/css?family=VT323';
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html, body {
-  height: 100vh;
-}
-
 @-webkit-keyframes tada {
   from {
     -webkit-transform: scale3d(1, 1, 1);
@@ -31,7 +21,6 @@ html, body {
             transform: scale3d(1, 1, 1);
   }
 }
-
 @keyframes tada {
   from {
     -webkit-transform: scale3d(1, 1, 1);
@@ -82,8 +71,8 @@ header h4::after {
 }
 
 header img {
-  height: 2em;
   width: 2em;
+  height: 2em;
   margin-top: -2.5em;
   float: right;
 }
@@ -142,6 +131,18 @@ nav ul a:hover {
 
 svg {
   fill: #4a4a4a;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100vh;
 }
 
 ::-webkit-scrollbar {
