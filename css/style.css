@@ -1,5 +1,6 @@
 @import 'https://fonts.googleapis.com/css?family=VT323';
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -120,6 +121,23 @@ nav ul a {
 
 nav ul a:hover {
   background: #525252;
+}
+
+#recent {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin: auto;
+}
+
+#recent .embed-container {
+  margin: 1em 1.5em;
 }
 
 svg {
