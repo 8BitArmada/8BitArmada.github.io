@@ -71,7 +71,6 @@ header h4::after {
 }
 
 header img {
-  width: 2em;
   margin-top: -2.5em;
   float: right;
 }
@@ -130,8 +129,6 @@ nav ul a:hover {
 
 svg {
   fill: #4a4a4a;
-  width: 1.2rem;
-  height: 1.2rem;
 }
 
 * {
