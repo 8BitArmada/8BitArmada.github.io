@@ -1,5 +1,4 @@
 @import partials/variables
-@import partials/mixins
 nav ul
   flex-direction: column
   transition: .3s height ease-in-out
@@ -12,7 +11,11 @@ nav ul
 
 nav svg
   display: block
-  padding: 50px 50%
+  background: $nav
+  padding: $size*.8 50%
+  transition: .3s background ease-in-out
+  width: $size
+  margin: 0 auto
   cursor: pointer
 
   &:hover
