@@ -1,24 +1,19 @@
 @import partials/variables
+@import partials/mixins
 nav ul
   flex-direction: column
   transition: .3s height ease-in-out
   overflow: hidden
   height: 0px
-
   &.visible
     height: $mobile-nav-height
-
   a
     width: 100%
 
-img#toggle
+nav svg
   display: block
-  background: $nav
-  padding: $size*.8 50%
-  transition: .3s background ease-in-out
-  width: $size
-  margin: 0 auto
+  padding: 50px 50%
   cursor: pointer
 
   &:hover
-    background: lighten($nav, 3)
+    // background: lighten($nav, 3)

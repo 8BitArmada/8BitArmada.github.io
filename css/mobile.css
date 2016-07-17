@@ -15,18 +15,10 @@ nav ul a {
   width: 100%;
 }
 
-img#toggle {
+nav svg {
   display: block;
-  background: #4a4a4a;
-  padding: 0.96rem 50%;
-  transition: .3s background ease-in-out;
-  width: 1.2rem;
-  margin: 0 auto;
+  padding: 50px 50%;
   cursor: pointer;
-}
-
-img#toggle:hover {
-  background: #525252;
 }
 
 /*# sourceMappingURL=mobile.css.map */
