@@ -4,19 +4,24 @@ nav ul
   transition: .3s height ease-in-out
   overflow: hidden
   height: 0px
+  margin-top: 0em
+
   &.visible
     height: $mobile-nav-height
   a
     width: 100%
+    overflow: hidden
 
-nav img
-  display: block
+
+nav svg
   background: $nav
-  padding: $size*.8 50%
+  display: block
+  padding: .5em 50%
+  height: 2.5em
+  // overflow: visible
   transition: .3s background ease-in-out
-  width: $size
-  margin: 0 auto
+  fill: white
   cursor: pointer
 
   &:hover
-    // background: lighten($nav, 3)
+    background: lighten($nav, 3)

@@ -71,6 +71,7 @@ header h4::after {
 }
 
 header img {
+  width: 2.4rem;
   margin-top: -2.5em;
   float: right;
 }
@@ -78,10 +79,6 @@ header img {
 header img:hover {
   -webkit-animation: .5s tada;
           animation: .5s tada;
-}
-
-#toggle {
-  display: none;
 }
 
 nav ul {
@@ -108,6 +105,10 @@ nav ul a {
 
 nav ul a:hover {
   background: #525252;
+}
+
+nav svg {
+  display: none;
 }
 
 #recent {

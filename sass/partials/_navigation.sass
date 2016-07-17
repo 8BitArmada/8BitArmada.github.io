@@ -1,23 +1,23 @@
-#toggle
-  display: none
+nav
+  ul
+    list-style: none
+    display: flex
+    background: $nav
+    font:
+      family: $font
+      size: $size
 
-nav ul
-  list-style: none
-  display: flex
-  background: $nav
-  font:
-    family: $font
-    size: $size
+    li
+      border-right: 1px solid lighten($nav, 25)
 
-  li
-    border-right: 1px solid lighten($nav, 25)
+    a
+      display: inline-block
+      padding: $padding
+      transition: .3s background ease-in-out
+      text-decoration: none
+      color: contrast($nav)
 
-  a
-    display: inline-block
-    padding: $padding
-    transition: .3s background ease-in-out
-    text-decoration: none
-    color: contrast($nav)
-
-    &:hover
-      background: lighten($nav, 3)
+      &:hover
+        background: lighten($nav, 3)
+  svg
+    display: none
