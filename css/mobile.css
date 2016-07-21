@@ -5,30 +5,29 @@ nav ul {
   transition: .3s height ease-in-out;
   overflow: hidden;
   height: 0px;
-  margin-top: 0em;
 }
 
 nav ul.visible {
-  height: 207px;
+  height: 7.0625em;
 }
 
 nav ul a {
-  width: 100%;
-  overflow: hidden;
+  width: inherit;
 }
 
-nav svg {
-  background: #4a4a4a;
+nav object {
   display: block;
-  padding: .5em 50%;
-  height: 2.5em;
+  background: #4a4a4a;
+  height: 3rem;
+  width: 100%;
+  padding: 0.6rem 0;
   transition: .3s background ease-in-out;
-  fill: white;
   cursor: pointer;
+  pointer-events: none;
 }
 
-nav svg:hover {
-  background: #525252;
+.menu {
+  fill: white;
 }
 
 /*# sourceMappingURL=mobile.css.map */

@@ -5,19 +5,23 @@ nav
     background: $nav
     font:
       family: $font
-      size: $size
-
+      size: $size*1.5
     li
       border-right: 1px solid lighten($nav, 25)
+      flex-grow: 1
 
     a
-      display: inline-block
+      display: block
       padding: $padding
       transition: .3s background ease-in-out
-      text-decoration: none
+      width: 100%
       color: contrast($nav)
+      text:
+        decoration: none
+        align: center
 
       &:hover
         background: lighten($nav, 3)
-  svg
+
+  object
     display: none

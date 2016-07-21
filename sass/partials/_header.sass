@@ -19,30 +19,29 @@
 header
   background: $header
   padding: $padding
-  color: contrast($header)
+  color: contrast($theme)
   font:
     size: $size
     family: $font
 
   h4
     position: relative
-    color: lighten($header, 43)
+    color: mix($theme, contrast($theme), 33)
     white-space: nowrap
     overflow: hidden
     text-overflow: ellipsis
     &::after
       content: ''
-      margin-left: $size/1.5
       position: relative
-      bottom: $size/2
+      margin-left: $size/1.5
+      bottom: $size/7
       width: 100%
-      border-bottom: 1px solid $accent
       display: inline-block
+      border-bottom: 2px solid $accent
 
   img
     width: $size*2
-
-    margin-top: -2.5em
+    margin: -2.35em 0
     float: right
 
     &:hover

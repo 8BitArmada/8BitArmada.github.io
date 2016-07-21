@@ -1,13 +1,15 @@
+@import mixins
 // Colors
 $theme: #4a4a4a
-$header: lighten($theme, 5)
+$header: mix($theme, contrast($theme), 93)
 $accent: lime
-$nav: $theme
+$nav: mix($theme, contrast($theme), 100)
 
 // Sizing
 $padding: 1.5rem 1rem
+$size: 1.5rem
 // Typography
 $font: 'VT323', monospace
-$size: 1.2rem
 
-$mobile-nav-height: 207px
+$mobile-nav-height: pxToEm(113)
+$icon-size: 5px

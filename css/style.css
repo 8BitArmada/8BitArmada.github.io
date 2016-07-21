@@ -48,13 +48,13 @@ header {
   background: #575757;
   padding: 1.5rem 1rem;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-family: "VT323", monospace;
 }
 
 header h4 {
   position: relative;
-  color: #c4c4c4;
+  color: #c3c3c3;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -62,17 +62,17 @@ header h4 {
 
 header h4::after {
   content: '';
-  margin-left: 0.8rem;
   position: relative;
-  bottom: 0.6rem;
+  margin-left: 1rem;
+  bottom: 0.21429rem;
   width: 100%;
-  border-bottom: 1px solid lime;
   display: inline-block;
+  border-bottom: 2px solid lime;
 }
 
 header img {
-  width: 2.4rem;
-  margin-top: -2.5em;
+  width: 3rem;
+  margin: -2.35em 0;
   float: right;
 }
 
@@ -88,26 +88,31 @@ nav ul {
   display: flex;
   background: #4a4a4a;
   font-family: "VT323", monospace;
-  font-size: 1.2rem;
+  font-size: 2.25rem;
 }
 
 nav ul li {
   border-right: 1px solid #8a8a8a;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 nav ul a {
-  display: inline-block;
+  display: block;
   padding: 1.5rem 1rem;
   transition: .3s background ease-in-out;
-  text-decoration: none;
+  width: 100%;
   color: white;
+  text-decoration: none;
+  text-align: center;
 }
 
 nav ul a:hover {
   background: #525252;
 }
 
-nav svg {
+nav object {
   display: none;
 }
 
@@ -121,15 +126,48 @@ nav svg {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  margin: auto;
 }
 
 #recent .embed-container {
   margin: 1em 1.5em;
 }
 
-svg {
+.social {
   fill: #4a4a4a;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: block;
+  width: 1000px;
+}
+
+body {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+main {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+aside a {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  display: block;
+}
+
+aside object {
+  width: 5px;
+  display: block;
+  pointer-events: none;
+  margin-top: .5em;
 }
 
 * {
@@ -140,6 +178,10 @@ svg {
 
 html, body {
   height: 100vh;
+}
+
+.hide {
+  display: none !important;
 }
 
 ::-webkit-scrollbar {

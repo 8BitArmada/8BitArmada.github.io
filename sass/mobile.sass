@@ -1,27 +1,26 @@
 @import partials/variables
-nav ul
-  flex-direction: column
-  transition: .3s height ease-in-out
-  overflow: hidden
-  height: 0px
-  margin-top: 0em
-
-  &.visible
-    height: $mobile-nav-height
-  a
-    width: 100%
+@import partials/mixins
+nav
+  ul
+    flex-direction: column
+    transition: .3s height ease-in-out
     overflow: hidden
+    height: 0px
 
+    &.visible
+      height: $mobile-nav-height
+    a
+      width: inherit
 
-nav svg
-  background: $nav
-  display: block
-  padding: .5em 50%
-  height: 2.5em
-  // overflow: visible
-  transition: .3s background ease-in-out
-  fill: white
-  cursor: pointer
+  object
+    display: block
+    background: $nav
+    height: $size*2
+    width: 100%
+    padding: $size/2.5 0
+    transition: .3s background ease-in-out
+    cursor: pointer
+    pointer-events: none
 
-  &:hover
-    background: lighten($nav, 3)
+.menu
+  fill: contrast($theme)

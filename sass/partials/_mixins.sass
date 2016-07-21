@@ -1,22 +1,26 @@
 @function contrast($n)
-  $color-brightness: round((red($n) * 299) + (green($n) * 587) + (blue($n) * 114) / 1000)
-  $light-color: round((red(#ffffff) * 299) + (green(#ffffff) * 587) + (blue(#ffffff) * 114) / 1000)
+	$color-brightness: round((red($n) * 299) + (green($n) * 587) + (blue($n) * 114) / 1000)
+	$light-color: round((red(#ffffff) * 299) + (green(#ffffff) * 587) + (blue(#ffffff) * 114) / 1000)
 
-  @if abs($color-brightness) < ($light-color/2)
-    @return white
+	@if abs($color-brightness) < ($light-color/2)
+		@return white
 
-  @else
-    @return black
+	@else
+		@return black
 
 @function unitless($num)
-  @return $num / ($num * 0 + 1)
-
-
+	@return $num / ($num * 0 + 1)
 
 @mixin clearfix()
-  &:before,
-  &:after
-    content: "";
-    display: table;
-  &:after
-    clear: both;
+	&:before,
+	&:after
+		content: ''
+		display: table
+	&:after
+		clear: both
+
+
+$browser-context: 16; // Default
+
+@function pxToEm($pixels, $context: $browser-context)
+	@return #{$pixels/$context}em;

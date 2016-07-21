@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $( "nav svg" ).click(function() {
+  $('nav').click(function() {
     $('nav ul').toggleClass('visible');
   });
 });

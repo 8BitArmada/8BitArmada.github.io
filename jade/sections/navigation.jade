@@ -1,6 +1,5 @@
 nav
-  include:verbatim ../../img/icons/menu.svg
+  object(type='image/svg+xml', data='/img/icons/menu.svg')
   ul
-    li: a(href='/') Home
-    li: a(href='/contact-us.html') Contact Us
-    li: a(href='/schedule.html') Schedule
+    for item in nav
+      li: a(href=item.url)= item.name

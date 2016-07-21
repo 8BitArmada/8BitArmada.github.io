@@ -2,12 +2,30 @@
   display: flex
   justify-content: space-around
   flex-wrap: wrap
-  margin: auto
 
   .embed-container
     margin: 1em 1.5em
 
-svg
+.social
   fill: $theme
-  // width: $size
-  // height: $size
+  flex: 1
+  display: block
+  width: 1000px
+body
+  display: flex
+  flex-flow: column
+
+main
+  flex: 1
+
+aside
+
+  a
+    width: min-content
+    display: block
+
+  object
+    width: $icon-size
+    display: block
+    pointer-events: none
+    margin-top: .5em
