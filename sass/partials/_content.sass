@@ -1,31 +1,38 @@
 #recent
+  padding: 1em 1.5em
+  max-width: 100%
+  justify-content: space-between
   display: flex
-  justify-content: space-around
   flex-wrap: wrap
+  background: mix($theme, contrast($theme), 66)
 
-  .embed-container
-    margin: 1em 1.5em
+
 
 .social
   fill: $theme
   flex: 1
   display: block
-  width: 1000px
-body
-  display: flex
-  flex-flow: column
-
-main
-  flex: 1
 
 aside
+  width: 100vw
+  position: fixed
+  bottom: 0
+  padding: .5em .75em
+  background: lighten($theme, 50)
 
   a
     width: min-content
     display: block
 
   object
+    background: contrast($theme)
     width: $icon-size
     display: block
     pointer-events: none
     margin-top: .5em
+
+iframe
+  display: inline-block
+  +youtube(33vw)
+  margin: auto
+    bottom: 1em

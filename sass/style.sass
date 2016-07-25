@@ -10,11 +10,25 @@
   margin: 0
   padding: 0
 
-html, body
-  height: 100vh
-
 .hide
   display: none !important
 
 ::-webkit-scrollbar
-  display: none // Hide scrollbar on webkit
+  width: 0
+
+
+
+body
+  display: flex
+  height: 100vh
+  flex-direction: column
+  background: lighten($theme, 70)
+
+
+main
+  flex: 1
+  overflow: scroll
+
+@media (max-width: 75em)
+  iframe
+    +youtube(60vw)

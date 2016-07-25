@@ -20,7 +20,12 @@
 		clear: both
 
 
-$browser-context: 16; // Default
+// $browser-context: 16; // Default
 
-@function pxToEm($pixels, $context: $browser-context)
-	@return #{$pixels/$context}em;
+@function pxToEm($pixels, $context: 16)
+	@return #{$pixels/$context}em
+
+@mixin youtube($width)
+	width: $width
+	height: $width/(16/9)
+	max-width: 700px
