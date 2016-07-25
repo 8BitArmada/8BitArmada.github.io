@@ -5,7 +5,9 @@
   display: flex
   flex-wrap: wrap
   background: mix($theme, contrast($theme), 66)
-
+  @media (max-width: 47.5em)
+    #recent
+      flex-direction: column
 
 
 .social
@@ -18,7 +20,7 @@ aside
   position: fixed
   bottom: 0
   padding: .5em .75em
-  background: lighten($theme, 50)
+  background: mix($theme, contrast($theme), 50)
 
   a
     width: min-content

@@ -92,7 +92,7 @@ nav ul {
 }
 
 nav ul li {
-  border-right: 0.05em solid #595959;
+  border-right: 0.05em solid #999999;
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -132,6 +132,14 @@ nav object {
   background: #787878;
 }
 
+@media (max-width: 47.5em) {
+  #recent #recent {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .social {
   fill: #333;
   -webkit-flex: 1;
@@ -145,7 +153,7 @@ aside {
   position: fixed;
   bottom: 0;
   padding: .5em .75em;
-  background: #b3b3b3;
+  background: #999999;
 }
 
 aside a {
@@ -194,7 +202,7 @@ body {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #e6e6e6;
+  background: #eee;
 }
 
 main {
@@ -202,14 +210,6 @@ main {
       -ms-flex: 1;
           flex: 1;
   overflow: scroll;
-}
-
-@media (max-width: 75em) {
-  iframe {
-    width: 60vw;
-    height: 33.75vw;
-    max-width: 700px;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

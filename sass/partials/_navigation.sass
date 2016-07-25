@@ -2,12 +2,12 @@ nav
 	ul
 		list-style: none
 		display: flex
-		background: $nav
+		background: mix($theme, contrast($theme), 100)
 		font:
 			family: $font
 			size: $size
 		li
-			border-right: .05em solid lighten($nav, 15)
+			border-right: .05em solid mix($theme, contrast($theme), 50)
 			flex-grow: 1
 		a
 			display: block
@@ -21,7 +21,7 @@ nav
 				decoration: none
 
 			&:hover
-				background: lighten($nav, 3)
+				background: lighten(mix($theme, contrast($theme), 100), 3)
 
 	object
 		display: none
