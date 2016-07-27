@@ -86,7 +86,7 @@ nav ul {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background: #333333;
+  background: #333;
   font-family: "VT323", monospace;
   font-size: 1.3rem;
 }
@@ -132,8 +132,8 @@ nav object {
   background: #787878;
 }
 
-@media (max-width: 47.5em) {
-  #recent #recent {
+@media (max-width: 50em) {
+  #recent {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
@@ -149,11 +149,15 @@ nav object {
 }
 
 aside {
-  width: 100vw;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: fixed;
   bottom: 0;
   padding: .5em .75em;
-  background: #999999;
 }
 
 aside a {
@@ -173,8 +177,8 @@ aside object {
 
 iframe {
   display: inline-block;
-  width: 33vw;
-  height: 18.5625vw;
+  width: 46vw;
+  height: 25.875vw;
   max-width: 700px;
   margin: auto;
   margin-bottom: 1em;
@@ -202,14 +206,14 @@ body {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #eee;
+  background: #787878;
 }
 
 main {
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  overflow: scroll;
+  border: 5px solid lime;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -5,9 +5,8 @@
   display: flex
   flex-wrap: wrap
   background: mix($theme, contrast($theme), 66)
-  @media (max-width: 47.5em)
-    #recent
-      flex-direction: column
+  @media (max-width: 50em)
+    flex-direction: column
 
 
 .social
@@ -16,11 +15,13 @@
   display: block
 
 aside
-  width: 100vw
+  // width: 100vw
+  display: flex
+  flex-direction: column
   position: fixed
   bottom: 0
   padding: .5em .75em
-  background: mix($theme, contrast($theme), 50)
+  // background: mix($theme, contrast($theme), 50)
 
   a
     width: min-content
@@ -35,6 +36,6 @@ aside
 
 iframe
   display: inline-block
-  +youtube(33vw)
+  +youtube(46vw)
   margin: auto
     bottom: 1em
