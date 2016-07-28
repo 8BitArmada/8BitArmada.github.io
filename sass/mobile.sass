@@ -10,6 +10,7 @@ nav
     height: 0px
 
     &.visible
+    +
       height: $mobile-nav-height
     a
       width: inherit
@@ -22,7 +23,7 @@ nav
     padding: $size/2.5 0
     transition: .3s background ease-in-out
     cursor: pointer
-    pointer-events: none
+    // pointer-events: none
 
 .menu
   fill: contrast($theme)
