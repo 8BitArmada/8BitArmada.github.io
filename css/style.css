@@ -3,8 +3,7 @@ header {
   background: #414141;
   padding: 1.5rem 1rem;
   color: white;
-  font-size: 1.3rem;
-  font-family: "VT323", monospace;
+  font-size: inherit;
 }
 
 header h2 {
@@ -43,8 +42,8 @@ nav ul {
   display: -ms-flexbox;
   display: flex;
   background: #333;
-  font-family: "VT323", monospace;
-  font-size: 1.3rem;
+  font-family: inherit;
+  font-size: inherit;
 }
 
 nav ul li {
@@ -177,6 +176,7 @@ main {
 
 html {
   font-family: 'VT323', monospace;
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
