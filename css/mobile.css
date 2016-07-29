@@ -22,7 +22,7 @@ nav ul a {
 nav object {
   display: block;
   background: #333;
-  height: 2.6rem;
+  height: 2.5em;
   width: 100%;
   padding: 0.52rem 0;
   transition: .3s background ease-in-out;

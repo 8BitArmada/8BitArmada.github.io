@@ -1,5 +1,6 @@
 @import partials/variables
 @import partials/mixins
+
 header h4::after
   display: none
 nav
@@ -10,7 +11,6 @@ nav
     height: 0px
 
     &.visible
-    +
       height: $mobile-nav-height
     a
       width: inherit
@@ -18,12 +18,12 @@ nav
   object
     display: block
     background: $theme
-    height: $size*2
+    height: 2.5em
     width: 100%
     padding: $size/2.5 0
     transition: .3s background ease-in-out
     cursor: pointer
-    // pointer-events: none
+    pointer-events: none
 
 .menu
   fill: contrast($theme)
