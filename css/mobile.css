@@ -11,10 +11,6 @@ nav ul {
   height: 0px;
 }
 
-nav ul.visible {
-  height: 10.0625em;
-}
-
 nav ul a {
   width: inherit;
 }
@@ -32,6 +28,10 @@ nav object {
 
 .menu {
   fill: white;
+}
+
+.visible {
+  height: 10.0625em;
 }
 
 /*# sourceMappingURL=mobile.css.map */

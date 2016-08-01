@@ -2,28 +2,29 @@
 @import partials/mixins
 
 header h4::after
-  display: none
+	display: none
 nav
-  ul
-    flex-direction: column
-    transition: .3s height ease-in-out
-    overflow: hidden
-    height: 0px
+	ul
+		flex-direction: column
+		transition: .3s height ease-in-out
+		overflow: hidden
+		height: 0px
 
-    &.visible
-      height: $mobile-nav-height
-    a
-      width: inherit
+		a
+			width: inherit
 
-  object
-    display: block
-    background: $theme
-    height: 2.5em
-    width: 100%
-    padding: $size/2.5 0
-    transition: .3s background ease-in-out
-    cursor: pointer
-    pointer-events: none
+	object
+		display: block
+		background: $theme
+		height: 2.5em
+		width: 100%
+		padding: $size/2.5 0
+		transition: .3s background ease-in-out
+		cursor: pointer
+		pointer-events: none
 
 .menu
-  fill: contrast($theme)
+	fill: contrast($theme)
+
+.visible
+	height: $mobile-nav-height

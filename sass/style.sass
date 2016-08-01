@@ -2,27 +2,26 @@
 @import partials/variables
 @import partials/mixins
 @import partials/animations
-
 @import partials/header
 @import partials/navigation
 @import partials/content
 
 *
-  box-sizing: border-box
-  margin: 0
-  padding: 0
+	box-sizing: border-box
+	margin: 0
+	padding: 0
 
 .hide
-  display: none !important
+	display: none
 
 ::-webkit-scrollbar
-  width: 0
+	width: 0
 
 body
-  display: flex
-  height: 100vh
-  flex-direction: column
-  background: mix($theme, contrast($theme), 66)
+	display: flex
+	height: 100vh
+	flex-direction: column
+	background: mix($theme, contrast($theme), 66)
 
 main
-  flex: 1
+	flex: 1

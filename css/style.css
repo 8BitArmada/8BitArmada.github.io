@@ -252,11 +252,9 @@ aside a {
   display: block;
 }
 
-aside:hover {
-  -webkit-animation: rubberBand cubic-bezier(0.87, 0.16, 0, 1);
-          animation: rubberBand cubic-bezier(0.87, 0.16, 0, 1);
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+aside a:hover {
+  -webkit-animation: rubberBand cubic-bezier(0.87, 0.16, 0, 1) both;
+          animation: rubberBand cubic-bezier(0.87, 0.16, 0, 1) both;
 }
 
 aside object {
@@ -267,12 +265,11 @@ aside object {
   margin-top: .5em;
 }
 
-iframe {
-  display: inline-block;
+aside iframe {
   width: 46vw;
   height: 25.875vw;
-  margin: auto;
-  margin-bottom: 1.1em;
+  display: inline-block;
+  margin: 0 auto 1.1em;
 }
 
 * {
@@ -282,7 +279,7 @@ iframe {
 }
 
 .hide {
-  display: none !important;
+  display: none;
 }
 
 ::-webkit-scrollbar {

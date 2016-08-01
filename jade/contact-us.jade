@@ -1,11 +1,8 @@
 extends includes/layout.jade
 
 block content
-  
-  //- h1 plz
-  form(action='https://formspree.io/8bitarmadayt@gmail.com', method='POST')
-    input(type='text', name='name' placeholder='Your Name')
-    input(type='email', name='_replyto' placeholder='Your Email')
-    textarea(name='message', placeholder="Your Message")
-    input(type='submit', value='Send')
-  
+form(action='https://formspree.io/8bitarmadayt@gmail.com', method='POST')
+  input(type='text', name='name' placeholder='Your Name')
+  input(type='email', name='_replyto' placeholder='Your Email')
+  textarea(name='message', placeholder="Your Message")
+  input(type='submit', value='Send')
