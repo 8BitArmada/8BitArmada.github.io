@@ -265,7 +265,7 @@ aside object {
   margin-top: .5em;
 }
 
-aside iframe {
+iframe {
   width: 46vw;
   height: 25.875vw;
   display: inline-block;
@@ -279,7 +279,7 @@ aside iframe {
 }
 
 .hide {
-  display: none;
+  display: none !important;
 }
 
 ::-webkit-scrollbar {

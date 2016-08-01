@@ -14,6 +14,7 @@ files:
   include: 'sass/**/*.s+(a|c)ss'
   ignore:
     - 'sass/vendor/**/*.*'
+    # So the mixins/functions don't cause a parse error
     - 'sass/partials/_mixins.sass'
 # Rule Configuration
 rules:
@@ -40,7 +41,7 @@ rules:
     -
       size: 'tab'
   property-sort-order:
-    - 1
+    - 1 
     -
       order:
         - content
