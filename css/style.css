@@ -272,6 +272,42 @@ iframe {
   margin: 0 auto 1.1em;
 }
 
+header h4::after {
+  display: none;
+}
+
+nav ul {
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  transition: .3s height ease-in-out;
+  overflow: hidden;
+  height: 0px;
+}
+
+nav ul a {
+  width: inherit;
+}
+
+nav object {
+  display: block;
+  background: #333;
+  height: 2.5em;
+  width: 100%;
+  padding: 0.52rem 0;
+  transition: .3s background ease-in-out;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+.menu {
+  fill: white;
+}
+
+.visible {
+  height: 10.0625em;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
