@@ -1,50 +1,50 @@
 // Animate.css
 
 @keyframes tada
-	from
-		transform: scale3d(1, 1, 1)
+  from
+    transform: scale3d(1, 1, 1)
 
-	10%, 20%
-		transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg)
+  10%, 20%
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg)
 
-	30%, 50%, 70%, 90%
-		transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)
+  30%, 50%, 70%, 90%
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)
 
-	40%, 60%, 80%
-		transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)
+  40%, 60%, 80%
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)
 
-	to
-		transform: scale3d(1, 1, 1)
+  to
+    transform: scale3d(1, 1, 1)
 
 header
-	background: mix($theme, contrast($theme), 93)
-	padding: $padding
-	color: contrast($theme)
-	font:
-		size: $size
-		family: $font
+  background: mix($theme, contrast($theme), 93)
+  padding: $padding
+  color: contrast($theme)
+  font:
+    size: $size
+    family: $font
 
-	h2
-		position: relative
-		color: mix($theme, contrast($theme), 33)
-		white-space: nowrap
-		overflow: hidden
-		text-overflow: ellipsis
-		font-size: 1.15em
+  h2
+    position: relative
+    color: mix($theme, contrast($theme), 33)
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+    font-size: 1.15em
 
-		&::after
-			content: ''
-			position: relative
-			margin-left: .5em
-			bottom: .25em
-			width: 100%
-			display: inline-block
-			border-bottom: 2px solid $accent
+    &::after
+      content: ''
+      position: relative
+      margin-left: .5em
+      bottom: .25em
+      width: 100%
+      display: inline-block
+      border-bottom: 2px solid $accent
 
-	img
-		width: $size*2
-		margin: -2.35em 0
-		float: right
+  img
+    width: $size*2
+    margin: -2.35em 0
+    float: right
 
-		&:hover
-			animation: .5s tada
+    &:hover
+      animation: .5s tada

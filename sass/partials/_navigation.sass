@@ -1,27 +1,27 @@
 nav
-	ul
-		list-style: none
-		display: flex
-		background: $theme
-		font:
-			family: $font
-			size: $size
-		li
-			border-right: .05em solid mix($theme, contrast($theme), 50)
-			flex: 1
-		a
-			display: block
-			padding: $padding
-			transition: .3s background ease-in-out
-			width: 100%
-			color: contrast($theme)
-			font-size: 1.1em
-			text:
-				align: center
-				decoration: none
+  ul
+    list-style: none
+    display: flex
+    background: $theme
+    font:
+      family: $font
+      size: $size
+    li
+      border-right: .05em solid mix($theme, contrast($theme), 50)
+      flex: 1
+    a
+      display: block
+      padding: $padding
+      transition: .3s background ease-in-out
+      width: 100%
+      color: contrast($theme)
+      font-size: 1.1em
+      text:
+        align: center
+        decoration: none
 
-			&:hover
-				background: lighten(mix($theme, contrast($theme), 100), 3)
+      &:hover
+        background: lighten(mix($theme, contrast($theme), 100), 3)
 
-	object
-		display: none
+  object
+    display: none
