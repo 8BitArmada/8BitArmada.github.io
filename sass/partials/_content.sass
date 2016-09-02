@@ -9,9 +9,10 @@
 
 
 .social
-  fill: $theme
   flex: 1
   display: block
+  fill: $theme
+  background: contrast($theme)
 
 aside
   display: flex
@@ -21,13 +22,11 @@ aside
   padding: .5em .75em
 
   a
-    width: min-content
     display: block
     &:hover
       animation: rubberBand cubic-bezier(.87, .16, 0, 1) both
 
   object
-    background: contrast($theme)
     width: 1.8em
     display: block
     pointer-events: none

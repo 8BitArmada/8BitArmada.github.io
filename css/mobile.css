@@ -17,21 +17,21 @@ nav ul a {
 
 nav object {
   display: block;
-  background: #333;
-  height: 2.5em;
+  height: 1.2em;
   width: 100%;
-  padding: 0.52rem 0;
+  padding: 0.78rem 0;
   transition: .3s background ease-in-out;
   cursor: pointer;
   pointer-events: none;
-}
-
-.menu {
-  fill: white;
+  background: #333;
 }
 
 .visible {
   height: 10.0625em;
+}
+
+.menu {
+  fill: white;
 }
 
 /*# sourceMappingURL=mobile.css.map */

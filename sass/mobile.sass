@@ -15,16 +15,15 @@ nav
 
   object
     display: block
-    background: $theme
-    height: 2.5em
+    height: 1.2em
     width: 100%
-    padding: $size/2.5 0
+    padding: $size*.6 0
     transition: .3s background ease-in-out
     cursor: pointer
     pointer-events: none
-
-.menu
-  fill: contrast($theme)
+    background: $theme
 
 .visible
   height: $mobile-nav-height
+.menu
+  fill: contrast($theme)
