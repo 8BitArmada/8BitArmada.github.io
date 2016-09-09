@@ -6,7 +6,8 @@
   flex-wrap: wrap
   @media (max-width: 50em)
     flex-direction: column
-
+    iframe
+      +youtube(75vw)
 
 .social
   flex: 1
@@ -19,18 +20,19 @@ aside
   flex-direction: column
   position: fixed
   bottom: 0
-  padding: .5em .75em
+  margin: .5em .75em
 
   a
     display: block
+    margin-top: .5em
+
     &:hover
-      animation: rubberBand cubic-bezier(.87, .16, 0, 1) both
+      animation: rubberBand 1s cubic-bezier(.87, .16, 0, 1) both
 
   object
     width: 1.8em
     display: block
     pointer-events: none
-    margin-top: .5em
 iframe
   +youtube(46vw)
   display: inline-block
