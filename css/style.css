@@ -223,6 +223,10 @@ nav object {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  #recent iframe {
+    width: 75vw;
+    height: 42.1875vw;
+  }
 }
 
 .social {
@@ -243,23 +247,23 @@ aside {
           flex-direction: column;
   position: fixed;
   bottom: 0;
-  padding: .5em .75em;
+  margin: .5em .75em;
 }
 
 aside a {
   display: block;
+  margin-top: .5em;
 }
 
 aside a:hover {
-  -webkit-animation: rubberBand cubic-bezier(0.87, 0.16, 0, 1) both;
-          animation: rubberBand cubic-bezier(0.87, 0.16, 0, 1) both;
+  -webkit-animation: rubberBand 1s cubic-bezier(0.87, 0.16, 0, 1) both;
+          animation: rubberBand 1s cubic-bezier(0.87, 0.16, 0, 1) both;
 }
 
 aside object {
   width: 1.8em;
   display: block;
   pointer-events: none;
-  margin-top: .5em;
 }
 
 iframe {
@@ -297,7 +301,7 @@ main {
 }
 
 .hide {
-  display: none !important;
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
