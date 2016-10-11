@@ -188,7 +188,6 @@ nav ul a {
   display: block;
   padding: 1.5rem 1rem;
   transition: .3s background ease-in-out;
-  width: 100%;
   color: white;
   font-size: 1.1em;
   text-align: center;
@@ -279,7 +278,7 @@ iframe {
 }
 
 ::-webkit-scrollbar {
-  width: 0;
+  width: 1px;
 }
 
 body {
