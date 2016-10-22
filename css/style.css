@@ -229,9 +229,6 @@ nav object {
 }
 
 .social {
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   display: block;
   fill: #333;
   background: white;
@@ -270,6 +267,7 @@ iframe {
   height: 25.875vw;
   display: inline-block;
   margin: 0 auto 1.1em;
+  border: 0;
 }
 
 * {
