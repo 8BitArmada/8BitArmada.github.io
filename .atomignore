@@ -1,3 +1,9 @@
 .sass-lint.yml
-prepros.cfg
-*.min.*
+
+
+sass
+css
+img
+js
+*.md
+.git*
