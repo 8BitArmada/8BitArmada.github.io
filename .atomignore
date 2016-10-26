@@ -1,1 +1,8 @@
 .sass-lint.yml
+
+css
+img
+js
+sass
+*.md
+.gitignore
