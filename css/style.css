@@ -223,8 +223,8 @@ nav object {
             flex-direction: column;
   }
   #recent iframe {
-    width: 75vw;
-    height: 42.1875vw;
+    width: 46vw;
+    height: 25.875vw;
   }
 }
 
@@ -277,7 +277,7 @@ iframe {
 }
 
 ::-webkit-scrollbar {
-  width: 1px;
+  width: 0px;
 }
 
 body {
