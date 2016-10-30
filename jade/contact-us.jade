@@ -2,7 +2,7 @@ extends includes/layout.jade
 
 block content
   form.hide(action='https://formspree.io/8bitarmadayt@gmail.com', method='POST')
-    input(type='text', playlistId='playlistId' placeholder='Your playlistId')
-    input(type='email', playlistId='_replyto' placeholder='Your Email')
-    textarea(playlistId='message', placeholder="Your Message")
+    input(type='text', name='name' placeholder='Your name')
+    input(type='email', name='_replyto' placeholder='Your Email')
+    textarea(name='message', placeholder="Your Message")
     input(type='submit', value='Send')
