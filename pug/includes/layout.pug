@@ -1,0 +1,18 @@
+doctype html
+include mixins.jade
+include config.jade
+
+html(lang="en")
+  head
+    title 8-Bit Armada
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel="stylesheet", type="text/css", href="css/style.css")
+    link(rel="stylesheet", type="text/css", href="css/mobile.css", media="screen and (max-width:500px)")
+
+  body
+    include ../sections/header.jade
+    include ../sections/navigation.jade
+    main: block content
+    include ../sections/social.jade
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js") 
+    script(src='js/mobile.min.js')
